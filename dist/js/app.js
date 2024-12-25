@@ -294,7 +294,7 @@ var Zepto = (function () {
   }
   function m(a) {
     var b, c;
-    return F[a] || ((b = E.createElement(a)), E.body.appendChild(b), (c = getComputedStyle(b, '').getPropertyValue('display')), b.parentNode.removeChild(b), 'none' == c && (c = 'block'), (F[a] = c)), F[a];
+    return F[a] || ((b = E.createElement(a)), E.body.appendChild(b), (c = getComputedStyle(b, '').getPropertyValue('display')), b.parentNode.removeChild(b), 'none' == c && (c = 'block'), F[a] = c), F[a];
   }
   function n(a) {
     return 'children' in a
@@ -1471,10 +1471,3 @@ var snowStorm = null;
   })});
 
 
-// Inline JavaScript for simplicity
-const toggleButton = document.getElementById('toggleButton');
-const creditSection = document.getElementById('creditSection');
-
-toggleButton.addEventListener('click', () => {
-  creditSection.classList.toggle('show');
-});

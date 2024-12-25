@@ -826,17 +826,23 @@ Copyright (c) 2014 Daniel Eden
   box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
 }
-.credit-section.show {
-  right: 0; /* Slide into view */
-}
-.toggle-button {
+
+.instagram-button {
   position: fixed;
   top: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background: #1e1e2f;
+  right: 1rem; /* Adjusted to avoid overlap with Credits button */
+  padding: 10px 20px;
+  background: #e4405f;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.instagram-button a {
+  color: white;
+  text-decoration: none;
 }
